@@ -4,7 +4,7 @@ import numpy as np
 
 plt.style.use('_mpl-gallery')
 
-# Make data
+
 X = np.arange(-5, 5, 0.25)
 Y = np.arange(-5, 5, 0.25)
 X, Y = np.meshgrid(X, Y)
