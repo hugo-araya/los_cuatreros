@@ -4,6 +4,7 @@ import numpy as np
 
 plt.style.use('_mpl-gallery')
 
+# Genera los datos.
 
 X = np.arange(-5, 5, 0.25)
 Y = np.arange(-5, 5, 0.25)
