@@ -13,6 +13,8 @@ while i < 10:
 
 plt.plot(x,y1)
 plt.plot(x,y2)
-plt.show()
+# plt.show()
+plt.savefig('grafi.png')
+
 
 
