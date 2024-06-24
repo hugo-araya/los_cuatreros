@@ -2,6 +2,8 @@ import hemo
 import tkinter as tk
 from tkinter import ttk 
 from tkinter import messagebox as mBox
+from gtts import gTTS
+from playsound import playsound
 
 def funcion_radio():
     print(opcion.get())
@@ -22,8 +24,10 @@ def funcion_analizar():
     datos = [hem, ed, op, op_g]
     resultado = hemo.analisis(datos)
     print(resultado)
+    tts = gTTS(text = resultado, lang='es')
+    tts.save('resultado.mp3')
+    playsound('resultado.mp3')
     mBox.showinfo("Resultado analisis", resultado)
-
 
 if __name__ == '__main__':
     ventana = tk.Tk()
